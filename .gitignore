@@ -1,0 +1,9 @@
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+run/CMakeFiles/
+run/Makefile
+run/cmake_install.cmake
+run/config.ini
+run/goReader
