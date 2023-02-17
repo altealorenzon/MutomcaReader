@@ -5,5 +5,5 @@ cmake_install.cmake
 run/CMakeFiles/
 run/Makefile
 run/cmake_install.cmake
-run/config.ini
+run/config.ini*
 run/goReader

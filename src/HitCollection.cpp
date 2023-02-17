@@ -101,8 +101,8 @@ void HitCollection::keepFirstHit(int nBoard, int nLayer, int nCell) {
     }
 
     if(_debug){
-        std::cout << "* Keeping 1 hit with smaller drift time in each cell -> new hit collection size : " << _hits.size() << std::endl;
-        this->printCollection();
+        std::cout << " * Keeping 1 hit with smaller drift time in each cell..." << std::endl;
+        std::cout << " * Final hit collection size : " << _hits.size() << std::endl;
     }
 
     return;

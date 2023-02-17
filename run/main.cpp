@@ -96,6 +96,7 @@ int main() {
                           << " RawTime "  << hit->getRawTime() << std::endl;
             } // end loop on hits
         } // end loop on detectors
+        getchar();
     } // end loop on events
     return 0;
 }
