@@ -72,6 +72,13 @@ int main() {
             HitCollection* hitColl = ev->getCollection(iDet);
             if(!hitColl) continue;
 
+            /// Keep only hits with smaller drift time in each cell of SL and Tubes
+            /// The arguments of the HitCollection::keepFirstHit method are:
+            /// for DT tot. number of boards, tot number of layers, max number of cells per layer
+            /// for SL tot. number of boards+1, tot number of layers+1, max number of cells per layer+1
+            if(iDet%2==0) hitColl->keepFirstHit(6,6,31);
+            if(iDet%2==1) hitColl->keepFirstHit(5,5,73);
+
             std::cout << "---------------------------------------------------------" << std::endl;
             std::cout << " --- Det " << hitColl->getDetID();
             if(iDet%2==0) std::cout << " ---> DT " << int(iDet/2) << std::endl;

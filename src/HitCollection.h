@@ -29,6 +29,7 @@ public:
     int hitSize();
     void setDetID(int detID);
     int getDetID();
+    void keepFirstHit(int nBoard, int nLayer, int nCell);
 
 private:
     int _detID;
